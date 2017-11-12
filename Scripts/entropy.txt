@@ -1,0 +1,94 @@
+#------------------------------------------------------------------------------------------------------------#
+# Calculate entropy on a set
+#------------------------------------------------------------------------------------------------------------#    
+def calcEntropy(data):
+    global attr_dict
+    entropy = 0.0
+    lenData = len(data)
+    classes = attr_dict[len(attr_dict)-1][1]
+    numberOfClasses = len(classes)
+
+    occurPerClass = numberOfClasses*[0]
+
+    for i in range(numberOfClasses):
+        occurPerClass[i] = sum(1 for r in data.values() if r[-1] == classes[i])
+    
+    p = numberOfClasses*[0]
+
+    for i in range(numberOfClasses):
+        p[i] = occurPerClass[i]/lenData
+
+    for i in range(numberOfClasses):
+        if(p[i] != 0):
+            entropy += (p[i] * log(p[i],2))
+        else:
+            entropy += 0
+
+    entropy = entropy *(-1)
+
+    return entropy
+
+#------------------------------------------------------------------------------------------------------------#
+# Check minimum entropy recursively
+#------------------------------------------------------------------------------------------------------------#
+def minimumEntropy(data, entropy, intervalList):
+    global attr_dict
+    
+    if len(data) < 4 or entropy == 0:
+        print(intervalList, entropy)
+        return intervalList
+        
+    dataLength = len(data)
+    int1 = int(dataLength/4)
+    int2 = int(dataLength/2)
+    int3 = 3 * int(dataLength/4)
+
+    entropy1 = finalEntropyTwoSets(int1, data)
+    entropy2 = finalEntropyTwoSets(int2, data)
+    entropy3 = finalEntropyTwoSets(int3, data)
+
+    minEntropy = min(entropy1, entropy2, entropy3)
+
+    if minEntropy == entropy1:
+        interval = int1
+    elif minEntropy == entropy2:
+        interval = int2
+    elif minEntropy == entropy3:
+        interval = int3
+
+    intervalList.append(interval)
+    dict1 = {}
+    dict2 = {}
+
+    for i in range(interval):
+        dict1[i] = data[i]
+    minimumEntropy(dict1, minEntropy, intervalList)
+
+    for i in range(interval, len(data)):
+        dict2[i - interval] = data[i]
+    minimumEntropy(dict2, minEntropy, intervalList)
+    
+    
+#------------------------------------------------------------------------------------------------------------#
+# Calculate final entropy between two sets
+#------------------------------------------------------------------------------------------------------------#
+def finalEntropyTwoSets(interval, data):
+    global attr_dict
+    global entropyS
+    global lengthS
+
+    dict1 = {}
+    dict2 = {}
+
+    for i in range(interval):
+        dict1[i] = data[i]
+
+    for i in range(interval, len(data)):
+        dict2[i] = data[i]
+
+    entropyS1 = calcEntropy(dict1)
+    entropyS2 = calcEntropy(dict2)
+
+    finalEntropy = ((len(dict1)/lengthS) * entropyS1) + ((len(dict2)/lengthS) * entropyS2)
+    
+    return finalEntropy
