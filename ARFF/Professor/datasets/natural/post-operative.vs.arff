@@ -1,0 +1,106 @@
+% Test data set generated from "post-operative"
+% 
+% Space: 24+ (27.6%)  63- (72.4%)
+% Test.: 5+ (29.4%)  12- (70.6%)
+
+@relation post-operative
+
+@attribute LCORE {mid,high,low}
+@attribute LSURF {low,high,mid}
+@attribute LO2 {excellent,good}
+@attribute LBP {mid,high,low}
+@attribute SURFSTBL {stable,unstable}
+@attribute CORESTBL {stable,unstable,modstable}
+@attribute BPSTBL {stable,modstable,unstable}
+@attribute COMFORT {15,10,05,07}
+@attribute Decision {1,0}
+
+@data
+
+high,mid,excellent,mid,unstable,unstable,stable,10,1
+mid,mid,good,mid,unstable,stable,stable,15,1
+mid,mid,good,high,stable,stable,stable,10,1
+mid,mid,good,mid,unstable,stable,modstable,10,1
+low,low,good,mid,stable,stable,stable,07,1
+mid,mid,good,high,unstable,stable,stable,10,0
+mid,low,good,high,unstable,stable,stable,10,0
+mid,high,good,mid,stable,stable,modstable,10,0
+mid,mid,excellent,mid,stable,stable,stable,15,0
+low,low,good,mid,unstable,stable,stable,10,0
+mid,low,good,high,stable,stable,modstable,10,0
+mid,mid,excellent,mid,stable,stable,unstable,15,0
+mid,low,good,mid,stable,stable,unstable,10,0
+low,low,good,high,stable,stable,stable,10,0
+mid,low,excellent,high,unstable,stable,unstable,10,0
+low,high,excellent,mid,unstable,stable,stable,10,0
+low,high,good,high,unstable,stable,modstable,15,0
+low,mid,good,mid,stable,stable,stable,15,1
+low,mid,excellent,mid,stable,stable,stable,10,1
+mid,mid,good,mid,unstable,stable,unstable,10,1
+mid,low,excellent,mid,stable,stable,unstable,10,1
+mid,mid,good,mid,stable,stable,stable,10,1
+mid,mid,excellent,mid,unstable,unstable,stable,10,1
+mid,high,excellent,high,stable,stable,stable,10,1
+low,mid,excellent,high,unstable,stable,unstable,10,1
+high,low,good,mid,stable,stable,unstable,15,1
+mid,high,good,mid,stable,stable,stable,10,1
+mid,mid,excellent,mid,stable,stable,stable,10,1
+mid,mid,excellent,mid,stable,stable,modstable,10,1
+mid,mid,excellent,mid,unstable,stable,stable,15,1
+mid,low,good,high,unstable,unstable,stable,15,1
+mid,low,excellent,mid,unstable,stable,modstable,10,1
+high,high,good,high,unstable,stable,stable,15,1
+low,mid,good,mid,unstable,stable,stable,10,1
+low,low,good,mid,unstable,stable,unstable,10,1
+mid,low,excellent,high,stable,stable,modstable,05,1
+high,high,good,mid,stable,stable,modstable,10,0
+mid,low,excellent,high,stable,stable,stable,10,0
+low,mid,good,mid,unstable,stable,stable,10,0
+mid,low,good,high,unstable,stable,modstable,10,0
+high,high,excellent,high,unstable,stable,unstable,15,0
+high,high,excellent,mid,unstable,stable,modstable,10,0
+mid,mid,good,mid,stable,stable,stable,10,0
+low,mid,excellent,high,stable,stable,modstable,10,0
+mid,mid,excellent,mid,stable,stable,unstable,10,0
+mid,mid,good,mid,stable,stable,stable,10,0
+low,mid,good,mid,stable,stable,unstable,10,0
+mid,high,good,low,unstable,stable,stable,10,0
+mid,mid,excellent,mid,stable,stable,unstable,10,0
+high,mid,good,high,stable,stable,unstable,15,0
+low,low,good,mid,unstable,stable,unstable,10,0
+mid,mid,excellent,mid,unstable,stable,stable,10,0
+low,low,excellent,mid,stable,stable,stable,10,0
+mid,high,good,mid,unstable,stable,unstable,15,0
+mid,mid,excellent,low,stable,stable,stable,10,0
+low,low,excellent,mid,stable,stable,stable,10,0
+mid,mid,good,mid,stable,stable,unstable,10,0
+mid,low,excellent,mid,stable,stable,stable,15,0
+mid,mid,good,mid,unstable,stable,stable,10,0
+mid,low,good,mid,stable,stable,stable,10,0
+mid,high,good,mid,unstable,modstable,modstable,10,0
+mid,mid,good,mid,unstable,stable,stable,15,0
+mid,mid,excellent,high,unstable,stable,modstable,10,0
+mid,mid,excellent,high,stable,stable,stable,10,0
+mid,mid,good,mid,unstable,stable,unstable,15,0
+high,low,excellent,high,stable,stable,modstable,10,0
+mid,mid,good,mid,unstable,stable,stable,15,0
+mid,low,excellent,high,stable,stable,modstable,10,0
+mid,high,good,mid,unstable,stable,modstable,10,0
+mid,mid,good,high,stable,stable,stable,10,0
+mid,low,excellent,mid,unstable,stable,stable,10,0
+high,high,excellent,high,unstable,stable,unstable,10,0
+mid,mid,excellent,high,stable,stable,stable,10,0
+mid,mid,good,mid,stable,stable,stable,15,0
+mid,mid,excellent,high,stable,stable,stable,10,0
+high,mid,good,low,stable,stable,modstable,10,0
+mid,mid,excellent,mid,unstable,stable,stable,10,0
+low,mid,excellent,high,stable,stable,modstable,10,0
+high,mid,excellent,mid,unstable,stable,unstable,05,0
+mid,mid,excellent,mid,unstable,stable,stable,10,0
+mid,low,good,high,stable,unstable,modstable,15,0
+high,mid,excellent,mid,unstable,unstable,unstable,10,0
+mid,high,good,mid,unstable,stable,unstable,10,0
+mid,mid,good,high,unstable,stable,modstable,10,0
+mid,mid,excellent,mid,unstable,stable,stable,10,0
+mid,mid,excellent,mid,stable,stable,modstable,10,0
+low,high,good,mid,unstable,stable,stable,15,0

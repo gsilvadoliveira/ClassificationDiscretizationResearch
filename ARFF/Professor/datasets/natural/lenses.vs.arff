@@ -1,0 +1,39 @@
+% Test data set generated from "lenses"
+% 
+% Space: 9+ (37.5%)  15- (62.5%)
+% Test.: 2+ (40.0%)  3- (60.0%)
+
+@relation lenses
+
+@attribute age {young,prepresbyopic,presbyopic}
+@attribute prescription {myope,hypermetrope}
+@attribute astigmatic {no,yes}
+@attribute tearsrate {reduced,normal}
+@attribute result {1,0}
+
+@data
+
+presbyopic,hypermetrope,no,normal,1
+young,hypermetrope,no,normal,1
+presbyopic,myope,no,normal,0
+prepresbyopic,myope,no,reduced,0
+presbyopic,hypermetrope,yes,reduced,0
+prepresbyopic,myope,no,normal,1
+young,myope,yes,normal,1
+prepresbyopic,myope,yes,normal,1
+presbyopic,myope,yes,normal,1
+young,myope,no,normal,1
+prepresbyopic,hypermetrope,no,normal,1
+young,hypermetrope,yes,normal,1
+presbyopic,myope,yes,reduced,0
+presbyopic,hypermetrope,yes,normal,0
+young,hypermetrope,yes,reduced,0
+prepresbyopic,hypermetrope,no,reduced,0
+prepresbyopic,myope,yes,reduced,0
+young,hypermetrope,no,reduced,0
+presbyopic,myope,no,reduced,0
+young,myope,no,reduced,0
+young,myope,yes,reduced,0
+prepresbyopic,hypermetrope,yes,normal,0
+presbyopic,hypermetrope,no,reduced,0
+prepresbyopic,hypermetrope,yes,reduced,0

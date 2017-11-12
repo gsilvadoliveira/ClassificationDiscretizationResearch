@@ -1,0 +1,75 @@
+% Test data set generated from "breast"
+% 
+% Space: 81+ (29.2%)  196- (70.8%)
+% Test.: 16+ (29.1%)  39- (70.9%)
+
+@relation breast
+
+@attribute Age {1019,2029,3039,4049,5059,6069,7079,8089,9099}
+@attribute Menopause {lt40,ge40,premeno}
+@attribute Tumor-size {04,59,1014,1519,2024,2529,3034,3539,4044,4549,5054,5559}
+@attribute Inv-nodes {02,35,68,911,1214,1517,1820,2123,2426,2729,3032,3335,3639}
+@attribute Node-caps {yes,no}
+@attribute Deg-malig {1,2,3}
+@attribute Breast {left,right}
+@attribute Breast-quad {leftup,leftlow,rightup,rightlow,central}
+@attribute Irradiated {yes,no}
+@attribute Class {0,1}
+
+@data
+
+5059,premeno,3539,1517,yes,3,right,rightup,no,1
+6069,ge40,2529,35,no,2,right,rightup,no,1
+6069,ge40,4044,35,yes,3,right,leftlow,no,1
+4049,premeno,2024,02,no,2,left,leftlow,no,1
+5059,ge40,3034,35,no,3,right,leftup,no,1
+6069,ge40,3539,68,yes,3,left,leftlow,no,1
+3039,premeno,3539,02,no,3,left,leftlow,no,1
+5059,ge40,2024,02,no,2,left,leftup,no,1
+5059,premeno,3034,02,no,3,right,leftup,yes,1
+3039,premeno,3034,02,no,2,left,leftup,no,1
+4049,premeno,2024,35,yes,2,left,leftlow,yes,1
+6069,ge40,3034,02,no,3,right,leftup,yes,1
+4049,ge40,2024,02,no,2,right,leftup,no,1
+3039,premeno,04,02,no,2,right,central,no,1
+6069,ge40,2529,02,no,3,left,leftup,no,1
+6069,ge40,1014,68,yes,3,left,leftup,yes,1
+4049,premeno,3034,02,no,2,left,rightlow,no,0
+4049,premeno,1014,02,no,1,right,leftup,no,0
+5059,ge40,2024,02,no,3,left,leftup,no,0
+5059,ge40,2024,02,no,1,right,leftlow,no,0
+5059,premeno,2024,35,yes,2,left,leftlow,no,0
+5059,ge40,5054,02,no,1,right,rightup,no,0
+6069,ge40,3034,02,no,2,left,leftlow,no,0
+4049,premeno,3034,02,no,3,left,leftup,no,0
+7079,ge40,1014,02,no,2,left,central,no,0
+6069,ge40,3034,02,no,1,left,leftup,no,0
+5059,ge40,4044,35,yes,2,left,leftlow,no,0
+4049,premeno,2529,02,no,2,right,central,no,0
+4049,premeno,3034,02,no,1,left,rightup,no,0
+4049,premeno,3034,02,no,1,left,leftlow,no,0
+4049,premeno,2024,35,no,2,right,leftup,no,0
+4049,premeno,2529,02,no,2,left,leftup,yes,0
+4049,premeno,3034,02,no,1,right,leftup,no,0
+3039,premeno,2024,02,no,3,left,central,no,0
+5059,premeno,2529,02,yes,2,left,leftup,no,0
+4049,premeno,2529,02,no,3,right,leftup,yes,0
+7079,ge40,04,02,no,1,left,rightlow,no,0
+5059,ge40,1519,02,no,1,right,central,no,0
+6069,ge40,1014,02,no,1,left,leftlow,no,0
+4049,premeno,5054,02,no,2,left,leftlow,no,0
+4049,premeno,3539,02,no,1,left,leftlow,no,0
+5059,premeno,1014,02,no,1,left,leftlow,no,0
+6069,ge40,3034,68,yes,2,right,rightup,no,0
+4049,premeno,2529,02,no,2,right,leftlow,no,0
+4049,premeno,3539,911,yes,2,right,rightup,yes,0
+5059,premeno,1519,02,no,1,left,leftlow,no,0
+6069,ge40,3034,02,no,3,left,leftlow,no,0
+5059,ge40,2024,02,no,3,left,leftup,no,0
+5059,ge40,2529,1517,yes,3,right,leftup,no,0
+5059,premeno,2529,02,no,2,right,rightlow,no,0
+6069,ge40,5054,02,no,2,right,leftup,yes,0
+5059,ge40,4044,02,no,2,left,leftlow,no,0
+5059,ge40,2024,35,yes,2,right,leftup,no,0
+5059,ge40,3539,1517,no,3,left,leftlow,no,0
+5059,ge40,2529,02,no,2,right,leftup,no,0

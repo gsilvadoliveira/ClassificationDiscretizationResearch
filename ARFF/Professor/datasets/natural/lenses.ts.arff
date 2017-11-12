@@ -1,0 +1,34 @@
+% Training data set generated from "lenses"
+% 
+% Space: 9+ (37.5%)  15- (62.5%)
+% Train: 7+ (36.8%)  12- (63.2%)
+
+@relation lenses
+
+@attribute age {young,pre_presbyopic,presbyopic}
+@attribute prescription {myope,hypermetrope}
+@attribute astigmatic {no,yes}
+@attribute tears_rate {reduced,normal}
+@attribute result {1,0}
+
+@data
+
+pre_presbyopic,myope,no,normal,1
+young,myope,yes,normal,1
+pre_presbyopic,myope,yes,normal,1
+presbyopic,myope,yes,normal,1
+young,myope,no,normal,1
+pre_presbyopic,hypermetrope,no,normal,1
+young,hypermetrope,yes,normal,1
+presbyopic,myope,yes,reduced,0
+presbyopic,hypermetrope,yes,normal,0
+young,hypermetrope,yes,reduced,0
+pre_presbyopic,hypermetrope,no,reduced,0
+pre_presbyopic,myope,yes,reduced,0
+young,hypermetrope,no,reduced,0
+presbyopic,myope,no,reduced,0
+young,myope,no,reduced,0
+young,myope,yes,reduced,0
+pre_presbyopic,hypermetrope,yes,normal,0
+presbyopic,hypermetrope,no,reduced,0
+pre_presbyopic,hypermetrope,yes,reduced,0
