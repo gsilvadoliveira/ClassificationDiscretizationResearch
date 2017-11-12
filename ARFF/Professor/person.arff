@@ -1,0 +1,17 @@
+@relation person
+
+@attribute name {morgan,bob,vincent,amanda,reid,lauren,elisa}
+@attribute over6ft {yes,no}
+@attribute eyecolor {blue,brown,purple}
+@attribute hairstyle {long,none,short}
+@attribute sex {female,male}
+
+@data
+
+morgan,yes,blue,long,female
+morgan,no,brown,none,male
+vincent,yes,brown,short,male
+amanda,no,brown,short,female
+reid,no,blue,short,male
+lauren,no,purple,long,female
+elisa,yes,brown,long,female
