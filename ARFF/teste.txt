@@ -1,0 +1,11 @@
+@relation teste
+
+@attribute letra {a,b,c}
+@attribute num numeric
+@attribute class {p,n}
+
+@data
+b,10,p
+a,2,p
+c,1,n
+b,3,n

@@ -1,0 +1,25 @@
+% Data mining - practical machine learning tools and techniques
+
+@relation golf
+
+@attribute outlook     NUMERIC
+@attribute temperature NUMERIC
+@attribute humidity    NUMERIC
+@attribute windy       NUMERIC
+@attribute play        {yes, no}
+
+@data
+5.1,3.5,1.4,0.2, no
+5.1,3.5,1.4,0.2,  no
+5.1,3.5,1.4,0.2, yes
+5.1,3.5,1.4,0.2, yes
+5.1,3.5,1.4,0.2, yes
+5.1,3.5,1.4,0.2,  no
+5.1,3.5,1.4,0.2,  yes
+5.1,3.5,1.4,0.2, no
+5.1,3.5,1.4,0.2, yes
+5.1,3.5,1.4,0.2, yes
+5.1,3.5,1.4,0.2,  yes
+5.1,3.5,1.4,0.2,  yes
+5.1,3.5,1.4,0.2, yes
+5.1,3.5,1.4,0.2,  no

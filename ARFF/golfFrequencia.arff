@@ -1,0 +1,25 @@
+% Data mining - practical machine learning tools and techniques
+
+@relation golf
+
+@attribute outlook     {sunny, overcast, rainy}
+@attribute temperature {hot, mild, cool}
+@attribute humidity    {low, normal, high}
+@attribute windy       {true, false}
+@attribute play        {yes, no}
+
+@data
+sunny,    hot, normal, false, no
+sunny,    hot, high, true,  no 
+overcast, hot, normal, false, yes 
+rainy,    mild, high, false, yes
+rainy,    cool, normal, false, yes
+rainy,    cool, low, true,  no
+overcast, cool, low, true,  yes
+sunny,    mild, high, false, no
+sunny,    cool, low, false, yes
+rainy,    mild, normal, false, yes
+sunny,    mild, low, true,  yes
+overcast, mild, high, true,  yes
+overcast, hot, low, false, yes
+rainy,    mild, high, true,  no
